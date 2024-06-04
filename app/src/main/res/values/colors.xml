@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme_Blue">#1E74DA</color>
+    <color name="grey">#545454</color>
+    <color name="lightGrey">#F8F8F8</color>
+    <color name="text_color" >@color/black</color>
+    <color name="main_screen_bg_color" >@color/white</color>
+    <color name="red">#F44336</color>
+    <color name="green">#008205</color>
+    <color name="transparent">#00000000</color>
+</resources>

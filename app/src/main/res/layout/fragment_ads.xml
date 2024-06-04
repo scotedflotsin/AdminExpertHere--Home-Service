@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center|top"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:text="Admob Ads Control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/admobSwitch"
+                android:text="Loading.. "
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:enabled="false"
+                android:fontFamily="@font/outfit_light"
+                app:thumbTint="@color/theme_Blue"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.switchmaterial.SwitchMaterial>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:text="Banners"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/addSliderImageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/bg_border"
+                    android:backgroundTint="@color/white"
+                    android:drawableEnd="@drawable/baseline_add_24"
+                    android:text="Add"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/black" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout3">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

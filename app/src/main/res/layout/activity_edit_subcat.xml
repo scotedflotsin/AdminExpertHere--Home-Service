@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditSubcatActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/baseline_arrow_back_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/outfit"
+            android:text="Subategory Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+
+        android:layout_above="@id/submitBtn"
+        android:layout_below="@id/linearLayout2"
+        android:layout_width="match_parent"
+        android:gravity="center|top"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColorHint="@null"
+            app:boxBackgroundColor="@color/white"
+            app:cursorColor="@color/black"
+            app:expandedHintEnabled="true"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCatName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:fontFamily="@font/outfit"
+                android:hint="Subcategory Name"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp"
+                app:passwordToggleEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:textSize="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="(After Edit Go Back to Category page and refresh to see changes in sucategories!)"
+            android:layout_width="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/grey"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/theme_Blue"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Submit Details"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp" />
+
+</RelativeLayout>

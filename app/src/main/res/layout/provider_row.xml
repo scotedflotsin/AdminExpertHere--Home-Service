@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:clickable="true"
+    android:id="@+id/clickProviderCard"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_8sdp">
+
+
+        <ImageView
+            android:id="@+id/serviceImage"
+            android:layout_width="@dimen/_65sdp"
+
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/idTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/outfit_medium"
+                    android:lines="1"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="ID: 00"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/companyNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:fontFamily="@font/outfit_medium"
+
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="Company Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/providerNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/outfit_medium"
+                    android:lines="1"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="Provider Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/emailTxt"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="Email ID"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/servicesTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Service 352, Rate 4.5"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:id="@+id/statusTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="Active"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockBtn"
+                android:focusable="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/_3sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/blokIcon"
+                    android:src="@drawable/baseline_block_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/blockTxt"
+                    android:text="Block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

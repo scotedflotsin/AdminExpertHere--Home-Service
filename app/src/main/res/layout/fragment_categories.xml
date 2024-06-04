@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/refreshLay"
+    android:orientation="vertical"
+    tools:context=".fragments.CategoriesFragment">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_above="@id/createCatBtn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:visibility="gone">
+
+            </ProgressBar>
+        </LinearLayout>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/createCatBtn"
+           android:textAllCaps="false"
+           android:layout_margin="@dimen/_10sdp"
+           android:layout_alignParentBottom="true"
+           android:background="@color/theme_Blue"
+           android:textColor="@color/white"
+           android:text="Create Category"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

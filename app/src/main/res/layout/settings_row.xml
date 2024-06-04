@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <!-- Existing layout -->
+    <LinearLayout
+        android:id="@+id/cat_click_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_screen_bg_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/keyTxt"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit"
+                android:text="KEY: " />
+
+            <TextView
+                android:id="@+id/valueTxt"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit"
+                android:text="Value" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/editCat"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/bg_border"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/baseline_edit_note_24"
+                android:text="Edit"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black" />
+
+
+
+
+
+    </LinearLayout>
+    <!-- Bottom bar -->
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/lightGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AdminExpertHere</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_secrete">MYAPI123</string>
+
+
+    <string name="FcmSendUrl" translatable="false">https://fcm.googleapis.com/v1/projects/expert-here-9f4de/messages:send</string>
+
+
+    <string name="web_control_url">https://hpanel.hostinger.com/</string>
+    <string name="agora_web_url">https://console.agora.io/project/</string>
+    <string name="firebase_web_url">https://console.firebase.google.com/project/</string>
+</resources>
